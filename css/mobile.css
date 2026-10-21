@@ -1,0 +1,161 @@
+@media (max-width: 880px){
+  a, button{ -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+  .scroll-top-button{
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    width: 46px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 880px){
+  .nav-links{ display: none; }
+  .menu-button{ display: block; }
+  .nav-inner{ padding: 10px 16px; gap: 12px; }
+  .logo-img{ height: 34px; }
+  .nav-button{ margin-left: auto; font-size: 13px; padding: 8px 14px; white-space: nowrap; }
+}
+
+@media (max-width: 380px){
+  .logo-img{ height: 30px; }
+  .nav-button{ font-size: 12px; padding: 7px 11px; }
+}
+
+@media (max-width: 880px){
+  .hero{ min-height: 0; padding-top: 28px; padding-bottom: 112px; }
+  h1.hero-heading{ font-size: clamp(48px, 14vw, 68px); }
+  .hero-definition{ font-size: 12px; }
+  .hero-subtitle{ margin-bottom: 24px; }
+  .hero-buttons{ gap: 12px; margin-bottom: 26px; }
+  .hero-buttons a{ flex: 1 1 auto; text-align: center; }
+
+  .generator{
+    max-width: none;
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .generator-output{ order: 1; flex: 1 1 auto; font-size: 17px; font-weight: 600; min-height: 0; }
+  .generator button{ order: 2; }
+
+  .client-strip{ left: 0; right: 0; bottom: -96px; padding: 18px 0; border-radius: 0; }
+  .client-track{ gap: 34px; padding-right: 34px; }
+  .client-logo img{ height: 36px; }
+}
+
+@media (max-width: 860px){
+  .hero-media{ display: none; }
+}
+
+@media (hover: none){
+  .button-primary:hover{ transform: none; }
+}
+
+@media (max-width: 860px){
+  .anatomy{ padding: 8px 0 40px; }
+  .anatomy-inner{
+    grid-template-columns: 1fr;
+    width: calc(100% - 2.5rem);
+    gap: 28px;
+  }
+
+  .anatomy-copy{ order: -1; }
+  .anatomy-title,
+  .anatomy-intro,
+  .layer-tabs{ left: 0; }
+  .anatomy-title,
+  .anatomy-intro{ text-align: left; }
+  .anatomy-intro{ margin: 0 0 20px; font-size: 16px; max-width: none; }
+  .layer-tabs{ justify-content: flex-start; }
+  .layer-tab{ padding: 11px 20px; }
+  .anatomy-closer{ font-size: 1.6rem; }
+
+  .peach-wrap{ margin-bottom: 158px; }
+
+  .peach-wrap::after{
+    content: "Tap a part of the peach to explore";
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    min-height: 132px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(62,12,23,0.6);
+    border: 1.5px dashed rgba(62,12,23,0.28);
+    border-radius: 6px 20px 6px 20px;
+  }
+  .peach-wrap.opened::after{ display: none; }
+
+  #popup-skin,
+  #popup-seed,
+  #popup-flesh{
+    top: calc(100% + 12px);
+    right: 0;
+    bottom: auto;
+    left: 0;
+    min-height: 132px;
+    padding: 14px 18px;
+    background: var(--burgundy);
+    color: var(--buttermilk);
+    border-radius: 6px 20px 6px 20px;
+    white-space: normal;
+  }
+
+  .peach-arrow{ display: none; }
+  .popup-text{ width: 100%; }
+  .peach-popup .popup-title{ color: var(--buttermilk); font-size: 19px; }
+}
+
+@media (max-width: 880px){
+  .scroll-separator{
+    width: 32px;
+    height: 32px;
+    margin: 0 10px 3px;
+  }
+}
+
+@media (max-width: 880px){
+  .services-intro{ margin-bottom: 32px; }
+}
+
+@media (hover: none){
+  .social-button:hover{ transform: none; }
+}
+
+@media (max-width: 880px){
+  #contact{ padding: 40px 0; }
+
+  .contact-grid{
+    grid-template-columns: 1fr;
+    border-radius: 16px 30px 16px 30px;
+  }
+  .contact-info{ padding: 18px 16px; }
+  .contact-row{ gap: 12px; padding: 12px 0; }
+  .contact-icon{ width: 32px; height: 32px; }
+  .contact-icon svg{ width: 15px; height: 15px; }
+  .contact-row > div:last-child{ min-width: 0; }
+  .contact-label{ margin-bottom: 2px; }
+  .contact-value{ font-size: 15px; font-weight: 800; line-height: 1.4; overflow-wrap: anywhere; }
+  .contact-cta{ padding: 18px 16px 20px; gap: 14px; }
+  .contact-cta h3{ font-size: 22px; margin-bottom: 6px; }
+  .contact-cta p{ max-width: none; margin-bottom: 0; }
+  .social-links{ gap: 8px; flex-direction: column; }
+  .social-button{ justify-content: center; padding: 10px 14px; }
+
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+    padding: 26px 20px 30px;
+    gap: 10px;
+  }
+  .footer-logo{ height: 96px; }
+  .footer-copyright{ margin: 0; align-self: center; text-align: center; }
+}

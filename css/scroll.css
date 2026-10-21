@@ -1,0 +1,31 @@
+.scroll{
+  background: var(--burgundy);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2px 0;
+}
+
+.scroll-track{
+  display: inline-block;
+  animation: scrollLeft 22s linear infinite;
+  font-family: 'Bagel Fat One', sans-serif;
+  font-size: 15px;
+  color: var(--olive);
+  letter-spacing: 1px;
+}
+
+.scroll-separator{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin: 0 14px 3px;
+}
+
+@keyframes scrollLeft{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
+}

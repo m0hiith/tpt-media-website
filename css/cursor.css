@@ -1,0 +1,7 @@
+body{
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='30'%3E%3Cpath d='M11 2c6 6 9 14 9 20 0 5-4 6-9 6s-9-1-9-6c0-6 3-14 9-20z' fill='%233E0C17' stroke='%238b9420' stroke-width='1.5'/%3E%3Cpath d='M11 6c3 5 4 10 4 15M11 6c-3 5-4 10-4 15' stroke='%238b9420' stroke-width='.8' opacity='.6' fill='none'/%3E%3C/svg%3E") 11 4, auto;
+}
+
+a, button{
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='34'%3E%3Cpath d='M13 2c7 7 10 16 10 23 0 6-5 7-10 7s-10-1-10-7c0-7 3-16 10-23z' fill='%23F3DFAA' stroke='%233E0C17' stroke-width='1.5'/%3E%3Cpath d='M13 6c3.5 6 5 12 5 18M13 6c-3.5 6-5 12-5 18' stroke='%233E0C17' stroke-width='.8' opacity='.5' fill='none'/%3E%3C/svg%3E") 13 5, pointer;
+}

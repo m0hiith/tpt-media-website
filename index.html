@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Peach Theory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/peach.css">
+<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/cursor.css">
+<link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<div class="texture-overlay"></div>
+
+<div id="loader">
+  <svg viewBox="0 0 200 200">
+    <path class="loader-line" d="M100 150 Q100 105 100 72" stroke="#8b9420" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path class="loader-leaf" d="M100 82c-16-11-34-4-27 9 11 7 23 4 27-9z" fill="#8b9420"/>
+    <circle class="loader-dot" cx="100" cy="62" r="0" fill="#D49993"/>
+    <circle cx="100" cy="152" r="6" fill="#3E0C17" stroke="#8b9420" stroke-width="2"/>
+  </svg>
+</div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <img src="assets/Logo1.png" alt="The tpt" class="logo-img">
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-button">Start a project</a>
+    <button class="menu-button" id="menuButton" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+
+<svg width="0" height="0" style="position:absolute">
+  <filter id="wobbleFilter" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.01 0.35" numOctaves="2" seed="7" result="noise">
+      <animate attributeName="baseFrequency" values="0.01 0.35;0.015 0.4;0.01 0.35" dur="4s" repeatCount="indefinite"/>
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" in2="noise" xChannelSelector="R" yChannelSelector="G">
+      <animate attributeName="scale" values="4;7;4" dur="3s" repeatCount="indefinite"/>
+    </feDisplacementMap>
+  </filter>
+</svg>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-background"></div>
+
+  <svg class="hero-shape" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M250 60c60 0 150 40 160 140 8 88-58 190-165 195-100 5-190-70-195-170C45 130 150 60 250 60z" fill="#D49993" opacity="0.14"/>
+    <path d="M255 40c8-22 30-34 30-14-14 6-24 10-30 14z" fill="#707318" opacity="0.3"/>
+  </svg>
+
+  <div class="hero-media">
+    <img src="assets/IMG_1781.jpeg" alt="">
+  </div>
+
+  <div class="wrap hero-content">
+    <h1 class="hero-heading">
+      <span class="line fade-in" style="--d:.1s">Finding the</span><br>
+      <span class="line fade-in" style="--d:.28s"><em>FuzZ.</em></span>
+    </h1>
+
+    <p class="hero-definition fade-in" style="--d:.5s"><b>fuzZ</b> (n.) — the thing hiding inside a brand that makes it unmistakably itself.</p>
+
+    <p class="hero-subtitle fade-in" style="--d:.62s">We believe every brand has something interesting hiding inside it. Something that makes it, it. Something worth noticing. Our job is to find it, understand it, then build a creative experience around it.</p>
+
+    <div class="hero-buttons fade-in" style="--d:.74s">
+      <a href="#services" class="button-primary">See what we do</a>
+      <a href="#about" class="button-secondary">Our story</a>
+    </div>
+
+    <div class="generator fade-in" style="--d:.86s">
+      <button id="generatorButton" type="button">Find your FuzZ ↻</button>
+      <div class="generator-output" id="generatorOutput">Click to see what your brand's FuzZ might be.</div>
+    </div>
+
+    <div class="client-strip">
+      <div class="client-track" id="client-track">
+        <a href="https://realclient.com" target="_blank" rel="noopener noreferrer" class="client-logo"><img src="assets/Logo1.png" alt="Client 1"></a>
+        <div class="client-logo"><img src="assets/Logo1.png" alt="Client 2"></div>
+        <a href="https://anotherclient.com" target="_blank" rel="noopener noreferrer" class="client-logo"><img src="assets/Logo1.png" alt="Client 3"></a>
+        <a href="https://realclient.com" target="_blank" rel="noopener noreferrer" class="client-logo"><img src="assets/Logo1.png" alt="Client 1"></a>
+        <div class="client-logo"><img src="assets/Logo1.png" alt="Client 2"></div>
+        <a href="https://anotherclient.com" target="_blank" rel="noopener noreferrer" class="client-logo"><img src="assets/Logo1.png" alt="Client 3"></a>
+        <a href="https://realclient.com" target="_blank" rel="noopener noreferrer" class="client-logo" aria-hidden="true" tabindex="-1"><img src="assets/Logo1.png" alt=""></a>
+        <div class="client-logo" aria-hidden="true"><img src="assets/Logo1.png" alt=""></div>
+        <a href="https://anotherclient.com" target="_blank" rel="noopener noreferrer" class="client-logo" aria-hidden="true" tabindex="-1"><img src="assets/Logo1.png" alt=""></a>
+        <a href="https://realclient.com" target="_blank" rel="noopener noreferrer" class="client-logo" aria-hidden="true" tabindex="-1"><img src="assets/Logo1.png" alt=""></a>
+        <div class="client-logo" aria-hidden="true"><img src="assets/Logo1.png" alt=""></div>
+        <a href="https://anotherclient.com" target="_blank" rel="noopener noreferrer" class="client-logo" aria-hidden="true" tabindex="-1"><img src="assets/Logo1.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section-alt">
+  <div class="about-media">
+    <img src="assets/IMG_1786.jpeg" alt="">
+  </div>
+
+  <div class="wrap">
+    <span class="section-label">About us</span>
+    <h2 class="section-heading" style="color:var(--burgundy); margin-bottom:30px;">What is The Peach Theory?</h2>
+
+    <div class="about-text reveal">
+      <p>In Asian traditions, the peach symbolises longevity, immortality and good health.</p>
+      <p>The peach didn't begin as we know it today. The fruit we recognise now is the result of selection, refinement and growth over time — rather than one sudden transformation.</p>
+      <p>That's what we see in a brand. Something that becomes stronger through understanding, refinement and intentional choices.</p>
+    </div>
+  </div>
+</section>
+
+<section id="anatomy" class="anatomy section-alt">
+  <div class="anatomy-inner">
+
+    <div class="peach-wrap">
+      <img src="assets/IMG_1785.png" class="peach-img" alt="The Three Peach Layers">
+      <svg class="peach-overlay" viewBox="0 0 612 600">
+        <path class="peach-zone" data-popup="popup-skin" data-label="The Skin||The first impression||The visual identity, hook||The thing that makes someone stop" d="M366 223C372.4 174.2 366 138 349.5 123.5C371.715 126.36 379.384 125.161 419.5 138.5C406 88.5 347.5 68.5 306.5 68.5C294.5 55 258.5 51 226 49.5C200 48.3 171.833 59.6667 161 65.5C150 73 127.5 89.5 105 125.5C75.8 163.1 84.5 206.5 92.5 223.5C92.1667 221.667 94.2 225.1 105 253.5C115.8 281.9 132.167 291.333 139 292.5H140C149.2 311.3 181.5 326.667 196.5 332C256.775 345.483 292.382 319.948 318.812 300.993L319.5 300.5C354 270 363.377 243 366 223Z" />
+        <path class="peach-zone" data-popup="popup-skin" data-label="The Skin||The first impression||The visual identity, hook||The thing that makes someone stop" d="M421 336.5L413.5 345C404 332.5 384 316.5 351.5 322C354.7 317.2 375.5 310.667 385.5 308C395 306 399 305.5 401.5 296C413.5 275.5 427 265 458.5 265C417.5 265 404.5 309.5 421 336.5Z" />
+        <path class="peach-zone" data-popup="popup-skin" data-label="The Skin||The first impression||The visual identity, hook||The thing that makes someone stop" d="M490 518C504 506.8 518 512 533 509.5C511 525 494.175 537.542 472 544C442.5 552.591 414.604 551.895 376.5 534.5C320 504.5 288.093 444 290 403C292 360 314 325.5 349.5 325.5C329.5 327.9 317.5 342.833 314 350C296.5 387 309.5 443 354.5 480C390.5 519.2 460 529.5 490 518Z" />
+        <path class="peach-zone" data-popup="popup-skin" data-label="The Skin||The first impression||The visual identity, hook||The thing that makes someone stop" d="M278 528.5C294 508.5 289.5 474 278 471C262 497 252 517 231.5 533C211 549 191.5 569.312 129 558C202.6 588.4 251 552 278 528.5Z" />
+        <path class="peach-zone" data-popup="popup-seed" data-label="The Seed||The thing that’s left behind- the output||The thing leading to growth" d="M492 361.5C515.602 391.898 508.167 427.833 501.5 442L485 444.5L476 445L467.5 444.5C458.3 443.3 421 426.5 412.5 418C404 409.5 399 336.983 424.5 335C460.5 332.2 479.833 350.5 485 360H485C487 360 490.836 360 492 361.5Z" />
+        <path class="peach-zone" data-popup="popup-flesh" data-label="The Flesh||The experience, meaning, emotion||The reason someone stays" d="M126 555.5C210 580 252.5 521 278 471.5L243 452H228L221.5 448L213 444L203 442.5L198 440L190 435L176 429L168.5 428L167 425L161.5 421.5L154.5 419L147 420.5L149.5 416.5L144 412H138.5L134 407H125L122.5 400.5L119 397L104.5 390C95.8333 384.333 76.3 374 67.5 378C55.9 382.8 41.3333 410 35.5 423C33 451 32.5 460.5 47 490C64.3332 525.264 106.167 548.667 126 555.5Z" />
+        <path class="peach-zone" data-popup="popup-flesh" data-label="The Flesh||The experience, meaning, emotion||The reason someone stays" d="M329 332C369.435 304.784 404 332.667 413.5 345C408 347.667 401.507 376.5 404 389.5C411 426 411 416.5 433.5 429C456 441.5 469 444.5 484 445C496 445.4 501.333 442.833 502.5 441.5L503.5 434.5C504.667 433.333 507 429.9 507 425.5C510.6 397.9 497.833 370.667 491 360.5L486 359.5C484.5 357.333 479.4 351.4 471 345C445.4 329.8 427 333 421 336.5C410.167 317.833 410 278 440.5 268.5C481.262 255.804 520.5 282.167 534.5 295C551.167 304.667 583.7 337.9 580.5 393.5C577.3 449.1 546.833 493.667 532 509C517 514 507 503.5 495 516C468.6 529.2 427 519.833 409.5 513.5C317 484.5 277 367 329 332Z" />
+      </svg>
+
+      <div class="peach-popup" id="popup-skin">
+        <div class="popup-text"></div>
+        <video class="peach-arrow" src="assets/arrow.webm" muted playsinline preload="auto"></video>
+      </div>
+
+      <div class="peach-popup" id="popup-seed">
+        <div class="popup-text"></div>
+        <video class="peach-arrow" src="assets/arrow.webm" muted playsinline preload="auto"></video>
+      </div>
+
+      <div class="peach-popup" id="popup-flesh">
+        <div class="popup-text"></div>
+        <video class="peach-arrow" src="assets/arrow.webm" muted playsinline preload="auto"></video>
+      </div>
+    </div>
+
+    <div class="anatomy-copy">
+      <h3 class="anatomy-title">The Anatomy of a Peach</h3>
+      <p class="anatomy-intro">We call it The Peach Theory because we’re trying to build the same thing— longevity, growth, and something that leaves an impression.</p>
+
+      <div class="layer-tabs">
+        <button type="button" class="layer-tab active" data-layer="skin">Skin</button>
+        <button type="button" class="layer-tab" data-layer="flesh">Flesh</button>
+        <button type="button" class="layer-tab" data-layer="seed">Seed</button>
+      </div>
+    </div>
+
+  </div>
+
+  <h3 class="anatomy-closer">A brand needs all three.</h3>
+</section>
+
+<div class="scroll">
+  <div class="scroll-track" id="scroll1"></div>
+</div>
+
+<section id="services" class="section-alt">
+  <div class="wrap">
+    <div class="services-intro">
+      <div>
+        <span class="section-label">Services</span>
+        <h2 class="section-heading" style="color:var(--burgundy);">What we grow for you.</h2>
+      </div>
+      <p>Twelve ways we help brands find their FuzZ and put it to work — pick one or plant the whole orchard.</p>
+    </div>
+
+    <div class="services-grid stagger">
+      <div class="service-card"><div class="card-dot"></div><h3>Social Media Marketing</h3><p>Feeds that people actually stop for.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Advertising</h3><p>Campaigns built to be remembered, not skipped.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Ad Film Production</h3><p>Films that do the talking for your brand.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Branding</h3><p>Identities with a signature, not a template.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>SEO</h3><p>Getting found first, for the right reasons.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Email Marketing</h3><p>Inboxes people actually want to open.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Pay-Per-Click Advertising</h3><p>Every click, working harder.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Website Design &amp; Development</h3><p>Sites built to convert, not just look pretty.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Affiliate &amp; Influencer Marketing</h3><p>Voices your audience already trusts.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Performance Marketing</h3><p>Creative measured by what it actually moves.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>WhatsApp Campaigns</h3><p>Conversations, not just broadcasts.</p></div>
+      <div class="service-card"><div class="card-dot"></div><h3>Online PR</h3><p>Getting the right people talking.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <span class="section-label">Get in touch</span>
+    <h2 class="section-heading" style="margin-bottom:36px;">Come find your FuzZ.</h2>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="contact-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#D49993" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div>
+          <div><div class="contact-label">Phone</div><a class="contact-value" href="tel:+919949051139">+91 994 905 1139</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#D49993" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 6l9 7 9-7"/></svg></div>
+          <div><div class="contact-label">Email</div><a class="contact-value" href="mailto:info@tptmediahouse.com">info@tptmediahouse.com</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#D49993" stroke-width="1.8"><path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg></div>
+          <a class="contact-value contact-address" href="https://www.google.com/maps/search/?api=1&query=TPT+Media+House+Plot+No.+5+Inorbit+Mall+Road+Opposite+Durgam+Cheruvu+Doctor%27s+Colony+HITEC+City+Hyderabad+Telangana+500081" target="_blank" rel="noopener">TPT Media House, Plot No. 5, Inorbit Mall Road, Opposite Durgam Cheruvu, Doctor's Colony, HITEC City, Hyderabad, Telangana – 500081</a>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <div>
+          <h3>Let's grow something together.</h3>
+          <p>Tell us what you're building — we'll help you find the thing that makes it stop-worthy.</p>
+        </div>
+        <div class="social-links">
+          <a class="social-button" href="https://www.instagram.com/tptmediahouse/" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"><path d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396,.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493,.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"></path></svg>
+            Instagram
+          </a>
+          <a class="social-button" href="https://www.linkedin.com/company/the-peach-theory-mediahouse/?viewAsMember=true" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"><path d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z" fill-rule="evenodd"></path></svg>
+            LinkedIn
+          </a>
+          <a class="social-button" href="https://www.facebook.com/people/TPT-Media-House/61594362125027" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 32 32"><path d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"></path></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-pattern"></div>
+  <div class="footer-content">
+    <img src="assets/Logo2.png" alt="The Peach Theory" class="footer-logo">
+    <span class="footer-copyright">© 2026 The Peach Theory Media House</span>
+  </div>
+</footer>
+
+<button class="scroll-top-button" id="scrollTopButton" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="#3E0C17" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+section{
+  padding: clamp(56px,9vw,110px) 0;
+  position: relative;
+}
+
+.section-alt{
+  background: var(--buttermilk);
+  color: var(--burgundy);
+}
+
+.section-label{
+  font-family: 'Bagel Fat One', sans-serif;
+  font-size: 15px;
+  color: var(--peach);
+  margin-bottom: 14px;
+  display: block;
+}
+.section-alt .section-label{ color: var(--olive); }
+
+h2.section-heading{
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.04;
+  margin: 0 0 20px 0;
+  max-width: 14ch;
+}
+
+#about{
+  padding: clamp(56px,9vw,110px) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#about .wrap{
+  position: relative;
+  z-index: 1;
+}
+
+.about-media{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55vw;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.about-media::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--buttermilk) 0%, rgba(243,223,170,0) 100%);
+}
+
+.about-text{ max-width: 62ch; }
+
+.about-text p{
+  font-size: clamp(16px,1.6vw,19px);
+  line-height: 1.7;
+  color: rgba(62,12,23,0.82);
+  margin: 0 0 18px 0;
+}
+
+.about-text p:first-of-type{
+  font-size: clamp(19px,2vw,23px);
+  color: var(--burgundy);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.reveal{
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.in{
+  opacity: 1;
+  transform: translateY(0);
+}
